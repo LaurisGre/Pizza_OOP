@@ -1,0 +1,21 @@
+{
+    "name": "vendor-name/www",
+    "description": "description",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "lauris",
+            "email": "em@il.com"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/classes",
+            "Core\\": "core/classes"
+        }
+    }
+}
