@@ -13,3 +13,7 @@
         </tr>
     <?php endforeach; ?>
 </table>
+<!-- <?php var_dump($data); ?> -->
+<?php if (isset($data['message'])) : ?>
+    <p class="message"> <?php print $data['message']; ?></p>
+<?php endif; ?>

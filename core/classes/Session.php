@@ -29,10 +29,11 @@ class Session
             'email' => $email,
             'password' => $password,
         ]);
-        
+
         if ($user) {
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;
+            $_SESSION['role'] = $user['role'];
             $this->user = $user;
             return true;
         }
